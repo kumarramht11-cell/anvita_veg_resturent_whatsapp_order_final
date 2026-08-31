@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480">
+<defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#145c32"/><stop offset="1" stop-color="#e7b72c"/></linearGradient></defs>
+<rect width="640" height="480" fill="url(#g)"/><circle cx="320" cy="225" r="125" fill="#fffaf0" opacity=".95"/>
+<text x="320" y="210" text-anchor="middle" font-family="Arial" font-size="72">🍛</text>
+<text x="320" y="295" text-anchor="middle" font-family="Arial" font-size="34" font-weight="700" fill="#145c32">Anvita Veg</text>
+<text x="320" y="335" text-anchor="middle" font-family="Arial" font-size="24" fill="#704522">Fresh Pure Veg</text>
+</svg>

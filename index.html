@@ -13,19 +13,7 @@ header{background:linear-gradient(135deg,#0b4726,#1d7a42);color:#fff;position:st
 .logo{width:64px;height:64px;border-radius:14px;object-fit:cover;background:#fff}.brand h1{margin:0;font-size:23px}.brand small{opacity:.9}
 .actions{margin-left:auto;display:flex;gap:8px}.btn{border:0;border-radius:10px;padding:10px 13px;font-weight:700;cursor:pointer}.gold{background:var(--gold);color:#2b260f}.light{background:#fff;color:var(--green)}.dark{background:#104526;color:#fff}
 .hero{background:linear-gradient(135deg,#fff4c5,#fff);border-bottom:1px solid #eadfb9}.heroin{max-width:1200px;margin:auto;padding:22px 16px}.offer{background:var(--green);color:#fff;border-radius:18px;padding:18px 20px;display:flex;align-items:center;gap:15px;box-shadow:0 8px 25px #145c3230}.offer b{font-size:24px}.offer span{opacity:.9}.searchrow{max-width:1200px;margin:16px auto 0;padding:0 16px 18px;display:flex;gap:10px}.search{flex:1;padding:13px 15px;border:1px solid #ccc;border-radius:12px;font-size:16px}.select{padding:13px;border:1px solid #ccc;border-radius:12px;background:#fff}
-main{max-width:1200px;margin:auto;padding:18px 16px 110px}.cat{margin:26px 0 12px;color:var(--green);font-size:21px}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px}.card{background:#fff;border:1px solid #e4e4dc;border-radius:14px;padding:13px;display:flex;justify-content:space-between;gap:8px;box-shadow:0 2px 7px #00000009}.card .name{font-weight:650}.price{white-space:nowrap;color:var(--brown);font-weight:800}.add{margin-top:9px;background:var(--green);color:#fff;border:0;border-radius:8px;padding:7px 10px;cursor:pointer}
-
-.offerBanner{position:relative;overflow:hidden;border-radius:20px;margin-bottom:14px;box-shadow:0 12px 30px #145c3230;border:2px solid #e7b72c;background:#0b4726}
-.offerBanner img{display:block;width:100%;height:auto;max-height:330px;object-fit:cover}
-.menuIntro{text-align:center;color:var(--green);font-size:25px;font-weight:900;margin:28px 0 8px}
-.card{display:block;padding:0;overflow:hidden;position:relative;transition:transform .18s ease,box-shadow .18s ease}
-.card:hover{transform:translateY(-3px);box-shadow:0 8px 20px #00000014}
-.cardImg{width:100%;height:155px;display:block;object-fit:cover;background:linear-gradient(135deg,#eef4df,#fff7d7)}
-.cardBody{padding:12px 13px 13px;display:flex;justify-content:space-between;gap:8px;align-items:flex-end}
-.cardInfo{min-width:0}.card .name{line-height:1.25}
-.card .price{font-size:17px}
-@media(max-width:650px){.offerBanner img{min-height:170px;object-fit:cover}.cardImg{height:190px}}
-
+main{max-width:1200px;margin:auto;padding:18px 16px 110px}.cat{margin:26px 0 12px;color:var(--green);font-size:21px}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px}.card{background:#fff;border:1px solid #e4e4dc;border-radius:14px;overflow:hidden;box-shadow:0 2px 7px #00000009}.foodimg{display:block;width:100%;height:155px;object-fit:cover;background:linear-gradient(135deg,#145c32,#e7b72c)}.cardbody{padding:10px 12px}.card .name{font-weight:750;min-height:40px;display:flex;align-items:center}.cardbottom{display:flex;align-items:center;justify-content:space-between;gap:8px}.price{white-space:nowrap;color:var(--brown);font-weight:800}.add{margin-top:9px;background:var(--green);color:#fff;border:0;border-radius:8px;padding:7px 10px;cursor:pointer}
 .cart{position:fixed;right:16px;bottom:16px;background:var(--gold);border:0;border-radius:999px;padding:14px 18px;font-weight:900;box-shadow:0 8px 25px #0004;z-index:30}
 .modal{display:none;position:fixed;inset:0;background:#0008;z-index:50;align-items:center;justify-content:center;padding:16px}.modal.show{display:flex}.box{background:#fff;border-radius:18px;max-width:650px;width:100%;max-height:90vh;overflow:auto;padding:20px}.box h2{margin-top:0}.row{display:flex;gap:10px;flex-wrap:wrap}.field{display:flex;flex-direction:column;gap:5px;flex:1;min-width:180px}.field input,.field textarea,.field select{padding:11px;border:1px solid #ccc;border-radius:9px}.close{float:right;border:0;background:#eee;border-radius:8px;padding:7px 10px}.cartline{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid #eee}.notice{background:#fff7d7;border:1px solid #edd98a;padding:10px;border-radius:10px;margin:10px 0}.admin{display:none}.admin.show{display:block}.admin table{width:100%;border-collapse:collapse}.admin td,.admin th{padding:7px;border-bottom:1px solid #ddd;text-align:left;font-size:14px}.danger{background:#b42318;color:#fff}.muted{color:#666;font-size:13px}
 footer{background:#103f25;color:#fff;padding:25px 16px;text-align:center}
@@ -38,9 +26,9 @@ footer{background:#103f25;color:#fff;padding:25px 16px;text-align:center}
 <div class="brand"><h1 id="restaurantName">Anvita Veg Restaurant</h1><small id="tagline">Pure Veg • Online & Offline Orders</small></div>
 <div class="actions"><button class="btn light offline" onclick="openOrder('offline')">Offline Order</button><button class="btn gold" onclick="openOrder('online')">Online Order</button><button class="btn dark" onclick="adminLogin()">Owner</button></div>
 </div></header>
-<section class="hero"><div class="heroin" id="heroIn"><div class="offerBanner"><img src="offer-banner.png" alt="Anvita Veg Restaurant special offer"></div><div class="offer"><div style="font-size:34px">🎁</div><div><b id="offerTitle">Today's Special Offer</b><br><span id="offerText">Get 20% OFF on all orders • Limited time offer!</span></div></div></div>
+<section class="hero"><div class="heroin" id="heroIn"><div class="offer"><div style="font-size:34px">🎁</div><div><b id="offerTitle">Today's Special Offer</b><br><span id="offerText">Fresh food, great taste — offer can be changed by owner.</span></div></div></div>
 <div class="searchrow"><input class="search" id="search" placeholder="🔎 Search food item..." oninput="render()"><select class="select" id="category" onchange="render()"><option value="">All Categories</option></select></div></section>
-<main><div class="menuIntro">🌿 Our Menu 🌿</div><div id="menu"></div></main>
+<main id="menu"></main>
 <button class="cart" onclick="openCart()">🛒 Cart <span id="count">0</span></button>
 <footer><b>Anvita Veg Restaurant</b><br>Thank You…! Visit Again..!!<br><span class="muted">No Smoking • Outside Food Not Allowed • Orders once placed cannot be cancelled</span></footer>
 
@@ -1890,7 +1878,7 @@ const DEFAULT_ITEMS = [
   }
 ];
 const KEY='anvita_restaurant_v1';
-const defaultState={name:'Anvita Veg Restaurant',tag:'Pure Veg • Online & Offline Orders',offerTitle:'🔥 TODAY’S SPECIAL — 20% OFF 🔥',offerText:'Order now & enjoy delicious pure-veg food. Limited time offer!',whatsapp:'919999999999',delivery:30,items:DEFAULT_ITEMS};
+const defaultState={name:'Anvita Veg Restaurant',tag:'Pure Veg • Online & Offline Orders',offerTitle:"Today's Special Offer",offerText:'Fresh food, great taste — offer can be changed by owner.',whatsapp:'919999999999',delivery:30,items:DEFAULT_ITEMS};
 let state=JSON.parse(localStorage.getItem(KEY)||'null')||defaultState;
 let cart=JSON.parse(localStorage.getItem(KEY+'_cart')||'{}');
 function save(){localStorage.setItem(KEY,JSON.stringify(state));}
@@ -1904,9 +1892,9 @@ function init(){
  render(); updateCount();
 }
 function esc(s){return String(s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
-function photoFor(x){
-  const tags=encodeURIComponent((x.name+' '+x.category+' Indian vegetarian food').replace(/[()\/]/g,' '));
-  return `https://loremflickr.com/640/480/${tags}?lock=${encodeURIComponent(x.id)}`;
+function foodImage(x){
+ const tags=(x.name+' indian food').toLowerCase().replace(/[^a-z0-9]+/g,',').replace(/^,|,$/g,'');
+ return 'https://loremflickr.com/700/500/'+encodeURIComponent(tags)+'?lock='+encodeURIComponent(x.id);
 }
 function render(){
  const q=document.getElementById('search').value.toLowerCase(), cat=document.getElementById('category').value;
@@ -1916,7 +1904,7 @@ function render(){
    const arr=state.items.filter(x=>x.category===c && x.name.toLowerCase().includes(q));
    if(!arr.length)return;
    out+=`<h2 class="cat">${esc(c)}</h2><div class="grid">`;
-   arr.forEach(x=>{const img=photoFor(x);out+=`<div class="card"><img class="cardImg" src="${img}" alt="${esc(x.name)}" loading="lazy" onerror="this.src='food-placeholder.svg'"><div class="cardBody"><div class="cardInfo"><div class="name">${esc(x.name)}</div><button class="add" onclick="add('${x.id}')">Add</button></div><div class="price">₹${money(x.price)}</div></div></div>`});
+   arr.forEach(x=>{const img=foodImage(x); out+=`<div class="card"><img class="foodimg" src="${img}" alt="${esc(x.name)}" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='food-placeholder.svg'"><div class="cardbody"><div class="name">${esc(x.name)}</div><div class="cardbottom"><button class="add" onclick="add('${x.id}')">Add</button><div class="price">₹${money(x.price)}</div></div></div></div>`});
    out+='</div>';
  });
  document.getElementById('menu').innerHTML=out||'<p>No item found.</p>';
